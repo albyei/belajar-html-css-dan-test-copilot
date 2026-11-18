@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Line</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns:  [cline1] 100px [cline2] auto [cline3] 100px [cline4];
+            grid-template-rows: [rline1] 50px [rline2] auto [rline3] 100px [rline4];
+        }
+
+        .content {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .header {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            grid-column-start: cline1;
+            grid-column-end: cline3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .content {
+            background-color: #f0f0f0;
+            grid-column-start: cline2;
+            grid-column-end: cline3;
+            grid-row-start: rline2;
+            grid-row-end: rline3; 
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        Selamat datang di website saya
+    </div>
+    <div class="content">
+        <h1>Ini adalah website Saya</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nostrum excepturi ex fugit temporibus. Nostrum blanditiis unde qui sed fugit reprehenderit quaerat dolorum porro libero commodi ut doloribus, quis assumenda.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ducimus eum deserunt blanditiis nihil eaque quisquam doloremque corrupti magni similique voluptates, quod reiciendis at odio eos perspiciatis error. Mollitia, sint?</p>
+    </div>
+    <div class="footer">
+        Develop By GW
+    </div>
+  </div>
+</body>
+</html> 

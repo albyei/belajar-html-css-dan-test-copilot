@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nora Studio - studio digital independen untuk desain dan pengalaman web.">
+    <title>Nora Studio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#beranda" aria-label="Nora Studio, kembali ke beranda">
+            <span class="brand-mark" aria-hidden="true"></span>
+            Nora Studio
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">
+            <span class="menu-button-line"></span>
+            <span class="menu-button-line"></span>
+            <span class="menu-button-label">Menu</span>
+        </button>
+
+        <nav id="main-navigation" class="main-navigation" aria-label="Navigasi utama">
+            <a href="#tentang">Tentang</a>
+            <a href="#karya">Karya</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <div class="hero-copy">
+                <p class="eyebrow">Studio digital independen</p>
+                <h1>Membuat ide menjadi <em>pengalaman nyata.</em></h1>
+                <p class="hero-description">Kami merancang identitas, produk digital, dan situs web yang sederhana, bernilai, dan mudah digunakan.</p>
+                <a class="primary-button" href="#karya">
+                    Lihat karya
+                    <span aria-hidden="true">↘</span>
+                </a>
+            </div>
+
+            <div class="hero-art" aria-label="Komposisi abstrak merah dan krem">
+                <div class="art-orbit art-orbit-one"></div>
+                <div class="art-orbit art-orbit-two"></div>
+                <div class="art-disc">
+                    <span>N</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="tentang">
+            <p class="section-number">01 / Tentang</p>
+            <div class="about-copy">
+                <h2>Desain yang tenang, jelas, dan punya tujuan.</h2>
+                <p>Setiap detail dipikirkan untuk membantu orang memahami, menikmati, dan bertindak—tanpa visual yang berlebihan.</p>
+            </div>
+        </section>
+
+        <section class="projects section" id="karya">
+            <div class="section-heading">
+                <p class="section-number">02 / Karya pilihan</p>
+                <p class="project-count">03 proyek</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card project-card-large">
+                    <div class="project-visual visual-solar">
+                        <span class="solar-circle"></span>
+                        <span class="solar-label">SOLAR<br>01</span>
+                    </div>
+                    <div class="project-meta">
+                        <h3>Solar Archive</h3>
+                        <p>Identitas &amp; editorial</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual visual-forms">
+                        <span class="form form-one"></span>
+                        <span class="form form-two"></span>
+                        <span class="form form-three"></span>
+                    </div>
+                    <div class="project-meta">
+                        <h3>Object Study</h3>
+                        <p>Produk digital</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual visual-type">
+                        <span>NEO</span>
+                    </div>
+                    <div class="project-meta">
+                        <h3>Neo Journal</h3>
+                        <p>Situs &amp; pengalaman</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="kontak">
+            <p class="section-number">03 / Kontak</p>
+            <div class="contact-copy">
+                <p>Ada ide untuk diwujudkan?</p>
+                <a href="mailto:halo@norastudio.test">Mari bicara <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="current-year">2026</span> Nora Studio</p>
+        <a href="#beranda">Kembali ke atas ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

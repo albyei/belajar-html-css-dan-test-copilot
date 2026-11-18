@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Line</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px auto 100px;
+            grid-template-areas: 
+                "header header header"
+                ". content ."
+                "footer footer footer";
+        }
+
+        .content {
+            background-color: #bb9090;
+            grid-area: content;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .header {
+            background-color: #c8a0a0;
+            grid-area: header;
+ 
+        }
+
+        .footer {
+            background-color: #f0f0f0;
+            grid-area: footer;
+
+        } 
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        Selamat datang di website saya
+    </div>
+    <div class="content">
+        <h1>Ini adalah website Saya</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nostrum excepturi ex fugit temporibus. Nostrum blanditiis unde qui sed fugit reprehenderit quaerat dolorum porro libero commodi ut doloribus, quis assumenda.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ducimus eum deserunt blanditiis nihil eaque quisquam doloremque corrupti magni similique voluptates, quod reiciendis at odio eos perspiciatis error. Mollitia, sint?</p>
+    </div>
+    <div class="footer">
+        Develop By GW
+    </div>
+  </div>
+</body>
+</html> 
